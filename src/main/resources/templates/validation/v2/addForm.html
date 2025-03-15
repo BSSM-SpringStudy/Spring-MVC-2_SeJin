@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -42,6 +43,7 @@
             <div class="field-error" th:errors="*{price}">
                 가격 오류
             </div>
+        </div>
         <div>
             <label for="quantity" th:text="#{label.item.quantity}">수량</label>
             <input type="text" id="quantity" th:field="*{quantity}"
@@ -64,9 +66,8 @@
                         type="button" th:text="#{button.cancel}">취소</button>
             </div>
         </div>
-        </div>
     </form>
 
-</div> <!-- /container -->
+</div> &lt;!&ndash; /container &ndash;&gt;
 </body>
 </html>
